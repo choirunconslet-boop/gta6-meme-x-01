@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Meme Lab — GTA VI meme generator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🌴 Leonida Meme Lab</h1>
+  <p>Make a GTA VI meme. The ghost approves. <span class="tag">make.fun bounty entry</span></p>
+</header>
+<main>
+  <section class="stage">
+    <canvas id="meme" width="1024" height="1024"></canvas>
+  </section>
+  <section class="panel">
+    <div class="row templates">
+      <button data-template="welcome" class="active">Welcome Sign</button>
+      <button data-template="wasted">WASTED</button>
+      <button data-template="loading">Loading Leonida</button>
+    </div>
+    <label>Sign / top text
+      <input id="topText" type="text" value="WELCOME TO LEONIDA" maxlength="40">
+    </label>
+    <label>Caption line 1
+      <input id="cap1" type="text" value="POPULATION: EVERYONE WHO" maxlength="40">
+    </label>
+    <label>Caption line 2
+      <input id="cap2" type="text" value="CALLED IN SICK TODAY" maxlength="40">
+    </label>
+    <label class="check"><input id="ghostOn" type="checkbox" checked> make.fun ghost in the scene</label>
+    <label>Ghost size
+      <input id="ghostSize" type="range" min="120" max="260" value="176">
+    </label>
+    <div class="row">
+      <button id="featured">★ Featured meme</button>
+      <button id="download" class="primary">⬇ Download PNG</button>
+    </div>
+    <p class="hint">Featured meme: the exact picture posted on X for the
+      <a href="https://make.fun/bounty/gta6-meme-x-01">make.fun GTA 6 meme bounty</a>.
+      Everything runs locally — no uploads, no keys.</p>
+  </section>
+</main>
+<footer>Leonida Meme Lab · entry for make.fun's “Post a GTA 6 meme on X” · ghost © make.fun press kit</footer>
+<script src="assets.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
